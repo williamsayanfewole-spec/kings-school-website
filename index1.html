@@ -1,0 +1,1661 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="King's Comprehensive High School, Ejigbo, Osun State, Nigeria. Quality education, strong values and a brighter future.">
+  <meta name="keywords" content="King's Comprehensive High School, Ejigbo, Osun State, school, Nigeria">
+  <meta name="author" content="King's Comprehensive High School">
+
+  <title>King's Comprehensive High School | Ejigbo, Osun State</title>
+
+  <style>
+    /* =========================
+       GENERAL STYLES
+    ========================== */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #ffffff;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      color: #06244d;
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      max-width: 700px;
+      margin: auto;
+      color: #666;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: #d4a017;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #b8860b;
+      transform: translateY(-2px);
+    }
+
+    .btn-dark {
+      background: #06244d;
+      color: #fff;
+    }
+
+    .btn-dark:hover {
+      background: #041a38;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+      background: #06244d;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .header-container {
+      min-height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #d4a017;
+      color: #06244d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .logo-text h1 {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    .logo-text span {
+      font-size: 12px;
+      color: #d4a017;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .navbar a {
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #d4a017;
+    }
+
+    .menu-button {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      color: white;
+
+      background:
+        linear-gradient(rgba(5,24,56,.78), rgba(5,24,56,.78)),
+        url("https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1800&q=80");
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .hero-content .tag {
+      display: inline-block;
+      background: rgba(212,160,23,0.95);
+      color: #06244d;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 52px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 span {
+      color: #d4a017;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 650px;
+      margin-bottom: 30px;
+      color: #f0f0f0;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+
+    /* =========================
+       QUICK INFO
+    ========================== */
+
+    .quick-info {
+      background: #f6f8fb;
+      padding: 30px 0;
+    }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .quick-card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    .quick-card .icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .quick-card h3 {
+      color: #06244d;
+      margin-bottom: 5px;
+    }
+
+    .quick-card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================== */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-image {
+      min-height: 400px;
+      border-radius: 12px;
+      background:
+        linear-gradient(rgba(6,36,77,.25), rgba(6,36,77,.25)),
+        url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .about-content h2 {
+      color: #06244d;
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    .about-content p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+
+    /* =========================
+       WHY CHOOSE US
+    ========================== */
+
+    .why-section {
+      background: #f6f8fb;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .why-card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+      transition: 0.3s;
+    }
+
+    .why-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .why-card .number {
+      width: 45px;
+      height: 45px;
+      background: #d4a017;
+      color: #06244d;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .why-card h3 {
+      color: #06244d;
+      margin-bottom: 10px;
+    }
+
+    .why-card p {
+      color: #666;
+    }
+
+
+    /* =========================
+       ACADEMICS
+    ========================== */
+
+    .academic-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .academic-card {
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 30px;
+      transition: 0.3s;
+    }
+
+    .academic-card:hover {
+      border-color: #d4a017;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .academic-card h3 {
+      color: #06244d;
+      margin-bottom: 10px;
+    }
+
+    .academic-card p {
+      color: #666;
+      font-size: 15px;
+    }
+
+
+    /* =========================
+       ADMISSION CTA
+    ========================== */
+
+    .cta {
+      background: #06244d;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: #e2e2e2;
+    }
+
+
+    /* =========================
+       FORMS
+    ========================== */
+
+    .form-section {
+      background: #f6f8fb;
+    }
+
+    .form-container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 7px;
+      font-weight: bold;
+      color: #06244d;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #d4a017;
+    }
+
+    .form-group textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+
+    /* =========================
+       GALLERY
+    ========================== */
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .gallery-item {
+      height: 230px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .gallery-item:nth-child(1) {
+      background-image: url("https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80");
+    }
+
+    .gallery-item:nth-child(2) {
+      background-image: url("https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=900&q=80");
+    }
+
+    .gallery-item:nth-child(3) {
+      background-image: url("https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=900&q=80");
+    }
+
+    .gallery-item:nth-child(4) {
+      background-image: url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80");
+    }
+
+    .gallery-item:nth-child(5) {
+      background-image: url("https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=900&q=80");
+    }
+
+    .gallery-item:nth-child(6) {
+      background-image: url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80");
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(6,36,77,.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+
+    /* =========================
+       NEWS
+    ========================== */
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .news-card {
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      overflow: hidden;
+      background: white;
+    }
+
+    .news-image {
+      height: 190px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .news-card:nth-child(1) .news-image {
+      background-image: url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80");
+    }
+
+    .news-card:nth-child(2) .news-image {
+      background-image: url("https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80");
+    }
+
+    .news-card:nth-child(3) .news-image {
+      background-image: url("https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=80");
+    }
+
+    .news-content {
+      padding: 25px;
+    }
+
+    .news-content h3 {
+      color: #06244d;
+      margin-bottom: 10px;
+    }
+
+    .news-content p {
+      color: #666;
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .contact-info h2 {
+      color: #06244d;
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .contact-item {
+      margin-bottom: 18px;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: #06244d;
+      margin-bottom: 4px;
+    }
+
+    .contact-item span {
+      color: #666;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #041a38;
+      color: white;
+      padding: 50px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 35px;
+    }
+
+    footer h3 {
+      color: #d4a017;
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer a {
+      color: #c9d0da;
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      color: #d4a017;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,.12);
+      padding-top: 20px;
+      text-align: center;
+      color: #aeb7c4;
+      font-size: 13px;
+    }
+
+
+    /* =========================
+       RESPONSIVE DESIGN
+    ========================== */
+
+    @media (max-width: 900px) {
+
+      .navbar {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        background: #06244d;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar.active {
+        display: flex;
+      }
+
+      .menu-button {
+        display: block;
+      }
+
+      .hero h2 {
+        font-size: 40px;
+      }
+
+      .quick-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid,
+      .academic-grid,
+      .news-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .section {
+        padding: 60px 0;
+      }
+
+      .section-title h2 {
+        font-size: 30px;
+      }
+
+      .hero {
+        min-height: 600px;
+      }
+
+      .hero h2 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .quick-grid,
+      .why-grid,
+      .academic-grid,
+      .gallery-grid,
+      .news-grid,
+      .form-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-container {
+        padding: 25px;
+      }
+
+      .logo-text h1 {
+        font-size: 15px;
+      }
+
+      .logo-text span {
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header>
+    <div class="container header-container">
+
+      <a href="#home" class="logo">
+        <div class="logo-icon">KC</div>
+
+        <div class="logo-text">
+          <h1>King's Comprehensive</h1>
+          <span>HIGH SCHOOL</span>
+        </div>
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav class="navbar" id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#academics">Academics</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <section class="hero" id="home">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="tag">WELCOME TO OUR SCHOOL</span>
+
+        <h2>
+          Building <span>Great Minds</span><br>
+          for a Brighter Future
+        </h2>
+
+        <p>
+          King's Comprehensive High School, Ejigbo, Osun State,
+          is committed to providing quality education, strong values
+          and an environment where every student can grow and succeed.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#admissions" class="btn btn-primary">
+            Apply for Admission
+          </a>
+
+          <a href="#about" class="btn btn-dark">
+            Learn More
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       QUICK INFORMATION
+  ========================== -->
+
+  <section class="quick-info">
+
+    <div class="container">
+
+      <div class="quick-grid">
+
+        <div class="quick-card">
+          <div class="icon">🎓</div>
+          <h3>Quality Education</h3>
+          <p>Focused on academic excellence and personal growth.</p>
+        </div>
+
+        <div class="quick-card">
+          <div class="icon">📚</div>
+          <h3>Strong Academics</h3>
+          <p>A learning environment designed to encourage success.</p>
+        </div>
+
+        <div class="quick-card">
+          <div class="icon">🏆</div>
+          <h3>Character</h3>
+          <p>We encourage discipline, responsibility and integrity.</p>
+        </div>
+
+        <div class="quick-card">
+          <div class="icon">🌟</div>
+          <h3>Bright Future</h3>
+          <p>Preparing students for future opportunities.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       ABOUT
+  ========================== -->
+
+  <section class="section" id="about">
+
+    <div class="container">
+
+      <div class="about-grid">
+
+        <div class="about-image"></div>
+
+        <div class="about-content">
+
+          <h2>Welcome to King's Comprehensive High School</h2>
+
+          <p>
+            We are committed to creating an educational environment
+            where students can develop academically, socially and
+            personally.
+          </p>
+
+          <p>
+            Our goal is to help young people discover their abilities,
+            develop confidence and prepare for responsible participation
+            in society.
+          </p>
+
+          <p>
+            Through quality teaching, discipline and positive values,
+            we strive to give every student a strong foundation for
+            the future.
+          </p>
+
+          <a href="#contact" class="btn btn-dark">
+            Contact Us
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       WHY CHOOSE US
+  ========================== -->
+
+  <section class="section why-section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Why Choose Our School?</h2>
+
+        <p>
+          We aim to provide an environment where students are encouraged
+          to learn, grow and become responsible future leaders.
+        </p>
+
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card">
+          <div class="number">01</div>
+          <h3>Dedicated Learning</h3>
+          <p>
+            Students are encouraged to develop strong study habits
+            and a positive attitude towards learning.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="number">02</div>
+          <h3>Qualified Teaching</h3>
+          <p>
+            We aim to provide effective teaching and meaningful
+            learning experiences.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="number">03</div>
+          <h3>Good Character</h3>
+          <p>
+            Education goes beyond academics. We encourage discipline,
+            respect and responsibility.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="number">04</div>
+          <h3>Student Development</h3>
+          <p>
+            Students are encouraged to discover their talents and
+            develop confidence.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="number">05</div>
+          <h3>Supportive Environment</h3>
+          <p>
+            We seek to create a safe and welcoming environment for
+            students to learn.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="number">06</div>
+          <h3>Future Focused</h3>
+          <p>
+            We prepare students with knowledge and values that can
+            support their future ambitions.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       ACADEMICS
+  ========================== -->
+
+  <section class="section" id="academics">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Academics</h2>
+
+        <p>
+          Our academic programmes are designed to support learning,
+          curiosity and continuous development.
+        </p>
+
+      </div>
+
+      <div class="academic-grid">
+
+        <div class="academic-card">
+          <h3>Sciences</h3>
+          <p>
+            Encouraging students to explore scientific ideas,
+            problem-solving and practical learning.
+          </p>
+        </div>
+
+        <div class="academic-card">
+          <h3>Arts & Humanities</h3>
+          <p>
+            Developing communication, creativity, critical thinking
+            and understanding of society.
+          </p>
+        </div>
+
+        <div class="academic-card">
+          <h3>Commercial Studies</h3>
+          <p>
+            Building knowledge in business, economics, accounting
+            and related areas.
+          </p>
+        </div>
+
+        <div class="academic-card">
+          <h3>Mathematics</h3>
+          <p>
+            Helping students develop logical reasoning and
+            quantitative problem-solving skills.
+          </p>
+        </div>
+
+        <div class="academic-card">
+          <h3>English Language</h3>
+          <p>
+            Developing strong reading, writing, speaking and
+            communication skills.
+          </p>
+        </div>
+
+        <div class="academic-card">
+          <h3>Computer Studies</h3>
+          <p>
+            Introducing students to digital skills and the
+            responsible use of technology.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       ADMISSION CTA
+  ========================== -->
+
+  <section class="section cta" id="admissions">
+
+    <div class="container">
+
+      <h2>Admissions Are Open</h2>
+
+      <p>
+        Interested in joining King's Comprehensive High School?
+        Send us your details through our online admission enquiry form.
+      </p>
+
+      <a href="#admission-form" class="btn btn-primary">
+        Start Admission Enquiry
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       ADMISSION FORM
+  ========================== -->
+
+  <section class="section form-section" id="admission-form">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Online Admission Enquiry</h2>
+
+        <p>
+          Complete the form below and our school will receive your enquiry.
+        </p>
+
+      </div>
+
+      <div class="form-container">
+
+        <!--
+          IMPORTANT:
+          Replace YOUR_ADMISSION_FORM_ID with your Formspree form ID.
+        -->
+
+        <form
+          action="https://formspree.io/f/YOUR_ADMISSION_FORM_ID"
+          method="POST"
+        >
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Admission Enquiry - King's Comprehensive High School"
+          >
+
+          <div class="form-grid">
+
+            <div class="form-group">
+              <label for="student-name">Student Name</label>
+
+              <input
+                type="text"
+                id="student-name"
+                name="student_name"
+                placeholder="Enter student's full name"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="parent-name">Parent/Guardian Name</label>
+
+              <input
+                type="text"
+                id="parent-name"
+                name="parent_name"
+                placeholder="Enter parent/guardian name"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email address"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter phone number"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="class">Class Applying For</label>
+
+              <select id="class" name="class" required>
+
+                <option value="">Select class</option>
+                <option>JSS 1</option>
+                <option>JSS 2</option>
+                <option>JSS 3</option>
+                <option>SS 1</option>
+                <option>SS 2</option>
+                <option>SS 3</option>
+
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="session">Admission Session</label>
+
+              <input
+                type="text"
+                id="session"
+                name="session"
+                placeholder="e.g. 2026/2027"
+              >
+            </div>
+
+            <div class="form-group full">
+
+              <label for="message">
+                Additional Information
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write any additional information..."
+              ></textarea>
+
+            </div>
+
+            <div class="form-group full">
+
+              <button type="submit" class="btn btn-primary">
+                Submit Admission Enquiry
+              </button>
+
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       GALLERY
+  ========================== -->
+
+  <section class="section" id="gallery">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>School Gallery</h2>
+
+        <p>
+          A glimpse into learning, school life and student activities.
+        </p>
+
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <div class="gallery-overlay">
+            School Life
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-overlay">
+            Learning
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-overlay">
+            Students
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-overlay">
+            Activities
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-overlay">
+            Education
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-overlay">
+            School Community
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       NEWS & EVENTS
+  ========================== -->
+
+  <section class="section why-section" id="news">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>News & Events</h2>
+
+        <p>
+          Keep up with school activities, announcements and events.
+        </p>
+
+      </div>
+
+      <div class="news-grid">
+
+        <article class="news-card">
+
+          <div class="news-image"></div>
+
+          <div class="news-content">
+
+            <h3>School Activities</h3>
+
+            <p>
+              Updates about school activities and student programmes
+              will be posted here.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+          <div class="news-image"></div>
+
+          <div class="news-content">
+
+            <h3>Academic Updates</h3>
+
+            <p>
+              Important academic announcements and information
+              can be shared with parents and students here.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+          <div class="news-image"></div>
+
+          <div class="news-content">
+
+            <h3>Upcoming Events</h3>
+
+            <p>
+              Information about upcoming school events and programmes
+              will appear in this section.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+
+  <section class="section" id="contact">
+
+    <div class="container">
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+
+          <h2>Contact King's Comprehensive High School</h2>
+
+          <p>
+            We would be happy to hear from you. Use the information
+            below or send us a message through the contact form.
+          </p>
+
+          <div class="contact-item">
+
+            <strong>📍 Address</strong>
+
+            <span>
+              Ejigbo, Osun State, Nigeria
+            </span>
+
+          </div>
+
+          <div class="contact-item">
+
+            <strong>📞 Phone</strong>
+
+            <span>
+              [School Phone Number]
+            </span>
+
+          </div>
+
+          <div class="contact-item">
+
+            <strong>✉️ Email</strong>
+
+            <span>
+              [School Email Address]
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="form-container">
+
+          <!--
+            IMPORTANT:
+            Replace YOUR_CONTACT_FORM_ID with your Formspree form ID.
+          -->
+
+          <form
+            action="https://formspree.io/f/YOUR_CONTACT_FORM_ID"
+            method="POST"
+          >
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Website Message - King's Comprehensive High School"
+            >
+
+            <div class="form-group">
+
+              <label for="contact-name">
+                Your Name
+              </label>
+
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="Your full name"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="contact-email">
+                Email Address
+              </label>
+
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="Your email address"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="contact-message">
+                Message
+              </label>
+
+              <textarea
+                id="contact-message"
+                name="message"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">
+              Send Message
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <h3>King's Comprehensive High School</h3>
+
+          <p>
+            Ejigbo, Osun State, Nigeria.
+          </p>
+
+          <p style="margin-top: 10px;">
+            Building great minds for a brighter future.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>Quick Links</h3>
+
+          <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#academics">Academics</a>
+            <a href="#admissions">Admissions</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>Contact</h3>
+
+          <div class="footer-links">
+
+            <a href="#contact">Ejigbo, Osun State</a>
+            <a href="#contact">[School Phone Number]</a>
+            <a href="#contact">[School Email Address]</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="copyright">
+
+        © <span id="year"></span>
+        King's Comprehensive High School.
+        All Rights Reserved.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+
+    // Mobile navigation
+    const menuButton = document.getElementById("menuButton");
+    const navbar = document.getElementById("navbar");
+
+    if (menuButton && navbar) {
+
+      menuButton.addEventListener("click", function () {
+
+        navbar.classList.toggle("active");
+
+      });
+
+    }
+
+
+    // Close mobile menu after clicking a link
+    const navLinks = document.querySelectorAll(".navbar a");
+
+    navLinks.forEach(function(link) {
+
+      link.addEventListener("click", function() {
+
+        navbar.classList.remove("active");
+
+      });
+
+    });
+
+
+    // Automatically display the current year
+    const yearElement = document.getElementById("year");
+
+    if (yearElement) {
+
+      yearElement.textContent = new Date().getFullYear();
+
+    }
+
+  </script>
+
+</body>
+</html>
+```
